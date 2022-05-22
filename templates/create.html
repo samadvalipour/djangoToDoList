@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block home %}
+    <div class="card py-4 col-lg-5 col-10 bg-white shadow-lg rounded">
+        <div class=" d-flex flex-column align-items-center">
+            <form action="" method="post">
+            {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="تایید">
+            </form>
+        </div>
+        <a href="{% url 'home' %}"
+           class="btn btn-icon shadow text-white rounded-pill bg-yellow">
+            <span class="material-icons plus">arrow_back</span>
+        </a>
+    </div>
+{% endblock %}

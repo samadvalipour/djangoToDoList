@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block home %}
+    <div class="card py-4 col-lg-5 col-10 bg-white shadow-lg rounded">
+        <div class=" d-flex flex-column align-items-center">
+            <form action="" method="post">
+                {% csrf_token %}
+                {% for fields in form.visible_fields %}
+                    <div>{{ fields.label }}</div>
+                    <div>{{ fields }} </div>
+                {% endfor %}
+                    <input class="btn btn-success mt-2" type="submit" value="ورود">
+            </form>
+        </div>
+        <a href="{% url 'home' %}"
+           class="btn btn-icon shadow text-white rounded-pill bg-yellow">
+            <span class="material-icons plus">arrow_back</span>
+        </a>
+    </div>
+{% endblock %}
