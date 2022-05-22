@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block home %}
+    <div class="card py-4 col-lg-5 col-10 bg-white shadow-lg rounded">
+        <div class=" d-flex flex-column align-items-center">
+            <h5 class="text-gray-600">{{ todo.title }}</h5>
+            <p class="text-gray-500">
+                {{ todo.body }}
+            </p>
+            {% if todo.done %}
+                <span class="material-icons mb-3 bold text-green ">check_circle</span>
+            {% else %}
+                <small class="text-gray-500  mb-3">انجام نشده</small>
+            {% endif %}
+            <small class="text-gray-500">{{ todo.date }}</small>
+        </div>
+        <a href="{% url 'home' %}"
+           class="btn btn-icon shadow text-white rounded-pill bg-yellow">
+            <span class="material-icons plus">arrow_back</span>
+        </a>
+    </div>
+{% endblock %}

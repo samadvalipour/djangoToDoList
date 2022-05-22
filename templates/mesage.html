@@ -1,0 +1,8 @@
+{% if messages %}
+    {% for message in messages %}
+        <div id="message" class="position-absolute top-2 alert alert-{{ message.tags }} alert-dismissible fade show"
+             role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
