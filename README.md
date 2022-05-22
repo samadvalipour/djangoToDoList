@@ -32,6 +32,6 @@ for run this project follow this steps
 - run manage.py with runserver argument
 ## Author
 
-- Linked in - [@samadvalipour](https://www.frontendmentor.io/profile/samadvalipour)
-- resume - [resume page](https://www.frontendmentor.io/profile/samadvalipour)
+- Linked in - [@samadvalipour](www.linkedin.com/in/samad-valipour)
+- resume - [resume page](https://samadvalipour.github.io/resume-page/)
 
